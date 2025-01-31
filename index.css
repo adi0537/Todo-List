@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(41, 86, 98);
+}
+#topdiv {
+    display:flex;
+    justify-content:space-evenly;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:azure;
+}
+li {
+    background-color:rgb(27, 72, 128);
+    color:beige;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.listitem {
+    display:flex;
+    justify-content:space-between;
+}
+#addbutton {
+    display:flex;
+    justify-content:space-evenly;
+}

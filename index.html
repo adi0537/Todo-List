@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo List App</title>
+	<link href="index.css" rel="stylesheet" lang="txt/css">
+	<script src="index.js"></script>
+</head>
+<body>
+	<div id="topdiv">
+		<div><h2>Todo List</h2></div>
+	</div>
+	<div id="contentdiv">
+		<ol>
+			<li id="item1">
+				<div class="listitem">
+					<div id="todo1">Go to class</div>
+					<div>
+					    <input id="input1" lang="txt">
+					    <button onclick="editItem(1)">Edit</button>
+					    <button onclick="deleteItem(1)">Delete</button>
+					</div>
+				</div>
+		    </li>	
+	    </ol>
+		<div id="addbutton">
+			<div>
+				<input id="addb" lang="txt">
+				<button onclick="addItem()">Add Item</button>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
