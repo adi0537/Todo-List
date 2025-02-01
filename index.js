@@ -11,31 +11,30 @@ function editItem(index){
 }
 function addItem(){
     i++;
-    let ind=i;
     const inputel=document.querySelector("#addb").value;
     //creating new listitem
     const newli=document.createElement("li");
-    newli.setAttribute("id",'item'+ind);
+    newli.setAttribute("id",'item'+i);
     //creting new div
     const div1=document.createElement("div");
-    div1.setAttribute("class","listitem");
+    div1.setAttribute("class",'listitem');
     
     const div1a=document.createElement("div");
-    div1a.setAttribute("id","todo"+ind);
+    div1a.setAttribute("id",'todo'+i);
     div1a.innerHTML=inputel;
 
     const div1b=document.createElement("div");
 
     const inputbox=document.createElement("input");
-    inputbox.setAttribute("id","input"+ind);
-    inputbox.setAttribute("lang","txt");
+    inputbox.setAttribute("id",'input'+i);
+    inputbox.setAttribute("lang",'txt');
     
     const editbutton=document.createElement("button");
-    editbutton.setAttribute("onclick","editItem(ind)");
+    editbutton.setAttribute("onclick",'editItem('+i+')');
     editbutton.innerHTML="Edit";
 
     const deletebutton=document.createElement("button");
-    deletebutton.setAttribute("onclick","deleteItem(ind)");
+    deletebutton.setAttribute("onclick","deleteItem('+i+')';
     deletebutton.innerHTML="Delete";
 
     const parentel=document.querySelector("ol");
